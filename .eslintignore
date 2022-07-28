@@ -1,0 +1,11 @@
+/**/fixtures/projects/back-end/.eslintrc.json
+tests/assets/sequencer.js
+tests/recreateDatabase.ts
+tests/01-create-products.test.ts
+tests/02-list-product.test.ts
+tests/03-create-user.test.ts
+tests/04-list-orders.test.ts
+tests/05-login.test.ts
+tests/06-product-validations.test.ts
+tests/07-user-validations.test.ts
+tests/08-create-order.test.ts
