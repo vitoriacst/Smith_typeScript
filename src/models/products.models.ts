@@ -5,11 +5,8 @@ import connection from './connection';
 // creating the products and inserting into the table
 const createProducts = async (produtos: Products) => {
   const { name, amount } = produtos;
-  const [result] = await connection.execute<ResultSetHeader>(
-    `INSERT INTO
-    Trybesmith.Products(name, amount)
-  VALUES
-    (?, ?, ?);`,
+  const result = await connection.execute<ResultSetHeader>(
+    'INSERT INTO Trybesmith.Products (name, amount) VALUES (?, ?)',
     [name, amount],
   );
   return result;
