@@ -1,5 +1,5 @@
 import { ResultSetHeader } from 'mysql2';
-import { Users } from '../interfaces';
+import { Users } from '../interfaces/users.interface';
 import connection from './connection';
 
 // creating the user and inserting into the table
