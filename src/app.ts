@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.json());
 // criando as rotas
+
 app.use(router);
 
 export default app;
