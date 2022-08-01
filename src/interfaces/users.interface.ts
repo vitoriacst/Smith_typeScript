@@ -3,4 +3,5 @@ export interface Users {
   classe: string,
   level: number,
   password: string
+
 }
