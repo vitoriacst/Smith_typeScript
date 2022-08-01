@@ -9,10 +9,10 @@ const createUser = async (usuários: Users) => {
     `INSERT INTO
     Trybesmith.Users(username, classe, level , password)
   VALUES
-    (?, ?, ?);`,
+    (?, ?, ? , ?);`,
     [username, classe, level, password],
   );
-  return result;
+  return { id: result.insertId, username, classe, level, password };
 };
 
 export default createUser;
