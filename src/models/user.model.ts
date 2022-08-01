@@ -12,19 +12,8 @@ const createUser = async (usuários: Users) => {
     (?, ?, ?);`,
     [username, classe, level, password],
   );
+  console.log(result, 'user model');
   return result;
 };
 
-// listing all users
-
-const listUsers = async () => {
-  const [users] = await connection.execute(
-    'SELECT * FROM Trybesmith.Users',
-  );
-  return users;
-};
-
-export {
-  createUser,
-  listUsers,
-};
+export default createUser;
