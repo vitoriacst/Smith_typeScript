@@ -8,5 +8,5 @@ import createUserController from '../controllers/user.controller';
 const router = Router();
 router.post('/products', createProductsController);
 router.get('/products', listProductsController);
-router.post('/', createUserController);
+router.post('/users', createUserController);
 export default router;
