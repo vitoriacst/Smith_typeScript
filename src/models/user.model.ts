@@ -12,7 +12,6 @@ const createUser = async (usuários: Users) => {
     (?, ?, ?);`,
     [username, classe, level, password],
   );
-  console.log(result, 'user model');
   return result;
 };
 
