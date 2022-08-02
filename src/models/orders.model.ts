@@ -1,8 +1,6 @@
-// import { Orders } from '../interfaces/orders.interface';
 import connection from './connection';
 
 const listOrdersModel = async () => {
-  // const { productsIds, userId } = orders;
   const query = `SELECT orders.id,
  orders.userId, JSON_ARRAYAGG(products.id) as productsIds
  FROM
@@ -12,7 +10,6 @@ const listOrdersModel = async () => {
  GROUP BY orders.id
  ORDER BY orders.userId`;
   const [result] = await connection.query(query);
-  console.log(result, 'model');
   return result;
 };
 
