@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import listOrdersController from '../controllers/orders.controller';
 import {
   createProductsController,
   listProductsController,
@@ -9,4 +10,5 @@ const router = Router();
 router.post('/products', createProductsController);
 router.get('/products', listProductsController);
 router.post('/users', createUserController);
+router.get('/orders', listOrdersController);
 export default router;
