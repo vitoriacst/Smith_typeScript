@@ -1,8 +1,8 @@
-import { Orders } from '../interfaces/orders.interface';
+// import { Orders } from '../interfaces/orders.interface';
 import connection from './connection';
 
-const listOrdersModel = async (orders:Orders) => {
-  const { productsIds, userId } = orders;
+const listOrdersModel = async () => {
+  // const { productsIds, userId } = orders;
   const query = `SELECT orders.id,
  orders.userId, JSON_ARRAYAGG(products.id) as productsIds
  FROM
@@ -12,7 +12,12 @@ const listOrdersModel = async (orders:Orders) => {
  GROUP BY orders.id
  ORDER BY orders.userId`;
   const [result] = await connection.query(query);
-  return { id: result, productsIds, userId };
+  console.log(result, 'model');
+  return result;
 };
 
 export default listOrdersModel;
+
+// JSON_ARRAYAGGretorna uma matriz JSON contendo um elemento para cada valor em um determinado conjunto de valores JSON ou SQL. Ele atua em uma coluna ou expressão que avalia um único valor.Retorna NULL em caso de erro ou se o resultado não contiver linhas.
+
+// inner join para combinar as colunas e seus valores respectivos
