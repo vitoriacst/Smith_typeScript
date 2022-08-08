@@ -14,3 +14,13 @@ No projeto trybeSmith houve a criação de uma API RESTful, na sua construção 
 - Express Async Errors
  
 # 💡Lições aprendidas
+```JavaScript
+let licoesAprendidas = [
+ 'Criando uma Aplicação com Express.js,
+ 'API com MSC' ,
+ 'Validando com Joi',
+ 'TypeScript'
+]
+```
+ ![image](https://user-images.githubusercontent.com/86388276/183483258-69de40d4-f406-4d14-8a8d-bb24c9336ffd.png)
+![image](https://user-images.githubusercontent.com/86388276/183483468-577d2ca1-d46b-4b2c-ba4b-30ca6e281020.png)
