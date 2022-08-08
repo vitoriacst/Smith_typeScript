@@ -22,5 +22,4 @@ let licoesAprendidas = [
  'TypeScript'
 ]
 ```
- ![image](https://user-images.githubusercontent.com/86388276/183483258-69de40d4-f406-4d14-8a8d-bb24c9336ffd.png)
-![image](https://user-images.githubusercontent.com/86388276/183483468-577d2ca1-d46b-4b2c-ba4b-30ca6e281020.png)
+![image](https://user-images.githubusercontent.com/86388276/183484090-b5d7fadf-78d8-4325-a291-31ad63bb06d1.png)
